@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using ElevenNotePractice.Models;
 using ElevenNotePractice.Providers;
 using ElevenNotePractice.Results;
+using ElevenNotePractice.Data;
 
 namespace ElevenNotePractice.Controllers
 {
@@ -323,7 +324,7 @@ namespace ElevenNotePractice.Controllers
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {
-            if (!ModelState.IsValid)
+                if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }

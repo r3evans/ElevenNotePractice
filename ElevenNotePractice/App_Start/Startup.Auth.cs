@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using ElevenNotePractice.Providers;
 using ElevenNotePractice.Models;
+using ElevenNotePractice.Data;
 
 namespace ElevenNotePractice
 {
